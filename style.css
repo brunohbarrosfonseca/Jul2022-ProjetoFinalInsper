@@ -1,0 +1,167 @@
+html, body{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    background-color: #663399;
+    font-family: 'Bitter', serif;
+    font-size: 18px;
+    color: #FFFFFF;
+    text-align: center;
+
+}
+
+main{
+    height: 100%;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.mainimage{
+    height: 80vh;
+    border:2px solid rgb(0, 64, 255);
+}
+
+.maintag{
+    padding-top: 30vh;
+    font-family: 'Raleway', sans-serif;
+    border:2px solid  rgb(0, 64, 255);
+}
+
+h1{
+    font-size: 3em;
+}
+
+p{
+    font-family: 'Raleway', sans-serif;
+    line-height: 1.6;
+}
+
+.intro{
+    margin-bottom: 20vh;
+}
+
+/*---------------------------------------------------------------------------------------------------------------*/
+
+/*Início código scrollytelling*/
+
+.passos{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    z-index:1;
+    border:1px solid rgb(0, 255, 34);
+}
+  
+.passos > div{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    display: flex;
+    display: none;
+    align-items: center;
+}
+  
+.passos > div.passo-ativo{
+    display: flex;
+}
+  
+.passos > div > *{
+    display: block;
+}
+
+/*
+.passos > div > img{
+    width: 20%;
+    max-width: 60px;
+    margin: 0 auto;
+}
+*/
+  
+.passos p{
+    width: 40%;
+    margin-right: 0%;
+}
+  
+.gatilhos{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+}
+
+.gatilhos > div{
+    border:2px solid red;
+    height: 100vh;
+    width: 100%;
+    z-index:2;
+    padding: 0%;
+}
+
+/*Fim código scrollytelling*/
+
+/*---------------------------------------------------------------------------------------------------------------*/
+
+.intro2{
+    position: relative;
+    display: inline;
+    top: 580vh;
+}
+
+/*---------------------------------------------------------------------------------------------------------------*/
+
+/*Início código mapa*/
+
+.mapintoxications{
+    width: 100vw;
+    position: relative;
+    top: 620vh;
+    z-index: 5;
+    border:2px solid rgb(255, 255, 0);
+}
+
+#muni{
+    width: 100%;
+    height: 10vh;
+    margin: 0 auto;
+    padding-top: 5vh;
+    line-height: 0;
+    text-align: center;
+    color: #FFF;
+    display: flex;
+    justify-content: center;
+    border:2px solid rgb(8, 0, 255);
+}
+
+#mapa-conteudo {
+    margin: 0 auto;
+    width: auto;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    position: relative;
+    border:2px solid rgb(149, 0, 255);
+    z-index: inherit;
+}
+
+svg{
+    height: 100%;
+    width: 100%;
+}
+
+svg path{
+    fill: rgb(255, 255, 255);
+    stroke: rgba(103, 61, 118,0.5);
+    stroke-width: 40;
+}
+
+svg path.ativo {
+    fill: rgb(101, 250, 128);
+    fill-opacity: 1;
+}
