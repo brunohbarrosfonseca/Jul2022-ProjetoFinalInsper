@@ -33,6 +33,11 @@ h1{
     font-size: 3em;
 }
 
+h2{
+    height: 1vh;
+    border:2px solid  rgb(0, 64, 255);
+}
+
 p{
     font-family: 'Raleway', sans-serif;
     line-height: 1.6;
@@ -117,31 +122,51 @@ p{
 
 /*Início código mapa*/
 
-.mapintoxications{
-    width: 100vw;
+.map{
+    height: 100vh;
+    width: 100%;
     position: relative;
-    top: 620vh;
+    top: 600vh;
     z-index: 5;
     border:2px solid rgb(255, 255, 0);
 }
 
-#muni{
-    width: 100%;
-    height: 10vh;
-    margin: 0 auto;
-    padding-top: 5vh;
-    line-height: 0;
-    text-align: center;
-    color: #FFF;
+.row{
     display: flex;
-    justify-content: center;
-    border:2px solid rgb(8, 0, 255);
+    border:2px solid  rgb(0, 64, 255);
 }
 
-#mapa-conteudo {
+.column {
+    display: inline-block;
+    align-content: center;
+    text-align: center;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 2%;
+    font-family: 'Raleway', sans-serif;
+}
+
+.column-left{
+    height: 33vh;
+    width: 25%;
+    background-color: #383838;
+    margin: auto;
+    margin-left: 2%;
+    padding-top: 11vh;
+}
+
+#UF-nome{
+    font-weight: bold;
+}
+
+.column-right{
+    width: 75%;
+}
+
+#map-content {
     margin: 0 auto;
     width: auto;
-    height: 90vh;
+    height: 85vh;
     display: flex;
     justify-content: center;
     align-content: center;
@@ -153,15 +178,19 @@ p{
 svg{
     height: 100%;
     width: 100%;
+    stroke: #FFFFFF;
+    stroke-opacity: 100%;
+    stroke-width: 150;
 }
 
 svg path{
-    fill: rgb(255, 255, 255);
-    stroke: rgba(103, 61, 118,0.5);
-    stroke-width: 40;
+    fill: #fa7af6;
+
 }
 
 svg path.ativo {
-    fill: rgb(101, 250, 128);
-    fill-opacity: 1;
+    stroke: #ffd400;
+    stroke-width: 1000;
+    fill: #ffd400;
+    fill-opacity: 0.5;
 }

@@ -1,0 +1,164 @@
+[
+  {
+    "id": 11,
+    "sigla": "Rondônia",
+    "mortes": 90,
+    "intoxicacoes": 554
+  },
+  {
+    "id": 12,
+    "sigla": "Acre",
+    "mortes": 0,
+    "intoxicacoes": 47
+  },
+  {
+    "id": 13,
+    "sigla": "Amazonas",
+    "mortes": 3,
+    "intoxicacoes": 92
+  },
+  {
+    "id": 14,
+    "sigla": "Roraima",
+    "mortes": 1,
+    "intoxicacoes": 118
+  },
+  {
+    "id": 15,
+    "sigla": "Pará",
+    "mortes": 24,
+    "intoxicacoes": 357
+  },
+  {
+    "id": 16,
+    "sigla": "Amapá",
+    "mortes": 0,
+    "intoxicacoes": 3
+  },
+  {
+    "id": 17,
+    "sigla": "Tocantins",
+    "mortes": 8,
+    "intoxicacoes": 803
+  },
+  {
+    "id": 21,
+    "sigla": "Maranhão",
+    "mortes": 16,
+    "intoxicacoes": 156
+  },
+  {
+    "id": 22,
+    "sigla": "Piauí",
+    "mortes": 28,
+    "intoxicacoes": 210
+  },
+  {
+    "id": 23,
+    "sigla": "Ceará",
+    "mortes": 117,
+    "intoxicacoes": 1384
+  },
+  {
+    "id": 24,
+    "sigla": "Rio Grande do Norte",
+    "mortes": 6,
+    "intoxicacoes": 55
+  },
+  {
+    "id": 25,
+    "sigla": "Paraíba",
+    "mortes": 48,
+    "intoxicacoes": 269
+  },
+  {
+    "id": 26,
+    "sigla": "Pernambuco",
+    "mortes": 361,
+    "intoxicacoes": 3620
+  },
+  {
+    "id": 27,
+    "sigla": "Alagoas",
+    "mortes": 31,
+    "intoxicacoes": 893
+  },
+  {
+    "id": 28,
+    "sigla": "Sergipe",
+    "mortes": 3,
+    "intoxicacoes": 106
+  },
+  {
+    "id": 29,
+    "sigla": "Bahia",
+    "mortes": 105,
+    "intoxicacoes": 1307
+  },
+  {
+    "id": 31,
+    "sigla": "Minas Gerais",
+    "mortes": 160,
+    "intoxicacoes": 3596
+  },
+  {
+    "id": 32,
+    "sigla": "Espírito Santo",
+    "mortes": 87,
+    "intoxicacoes": 1681
+  },
+  {
+    "id": 33,
+    "sigla": "Rio de Janeiro",
+    "mortes": 27,
+    "intoxicacoes": 351
+  },
+  {
+    "id": 35,
+    "sigla": "São Paulo",
+    "mortes": 204,
+    "intoxicacoes": 4187
+  },
+  {
+    "id": 41,
+    "sigla": "Paraná",
+    "mortes": 218,
+    "intoxicacoes": 4609
+  },
+  {
+    "id": 42,
+    "sigla": "Santa Catarina",
+    "mortes": 102,
+    "intoxicacoes": 1678
+  },
+  {
+    "id": 43,
+    "sigla": "Rio Grande do Sul",
+    "mortes": 52,
+    "intoxicacoes": 1498
+  },
+  {
+    "id": 50,
+    "sigla": "Mato Grosso do Sul",
+    "mortes": 12,
+    "intoxicacoes": 303
+  },
+  {
+    "id": 51,
+    "sigla": "Mato Grosso",
+    "mortes": 17,
+    "intoxicacoes": 431
+  },
+  {
+    "id": 52,
+    "sigla": "Goiás",
+    "mortes": 40,
+    "intoxicacoes": 1595
+  },
+  {
+    "id": 53,
+    "sigla": "Distrito Federal",
+    "mortes": 5,
+    "intoxicacoes": 195
+  }
+]
