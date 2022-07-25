@@ -1,5 +1,7 @@
 //Início código scrollytelling
 
+
+
 //Evento de escuta
 function escutaScroll(event){
     
@@ -209,6 +211,7 @@ function escutaScroll(event){
     
         //Declara que mapaConteudo é uma seleção dentro do elemento #mapa-conteudo no HMTL
         let mapaContent = document.querySelector('#map-content');
+        
     
         if (clickUF === 31) {
             //Declara que o HMTL da variável mapaConteúdo é o HTML da variável mapaMalha (SVG)
@@ -227,14 +230,14 @@ function escutaScroll(event){
             let codigoAlvoMun = parseInt (elemento.id);
         
             //Método filter para filtrar id de cada SVG com id do JSON de dados de intoxicações
-            let indiceIntoxMun = dadosMunIntox.filter((item) => {
+            let indiceIntoxMun = dadosMunIntox.filter(function(item) {
             return item.id === codigoAlvoMun;
             });
             //Define que variável corIntox é que retorna da coluna intoxicacoes do estado do JSON
-            let corIntoxMun = indiceIntoxMun[0].intoxicacoes;
+            let corIntox = indiceIntoxMun[0].intox;
                 
             //Define que o indice para preenchimento é baseado em um cálculo do valor de intoxicações de cada UF
-            elemento.dataset.indice = ((corIntoxMun * 100 / 30097)*5).toFixed(2); 
+            elemento.dataset.indice = ((corIntox * 100 / 30097)*5).toFixed(2); 
             //Define opacidade do preenchimento a partir do índice
             elemento.setAttribute('fill-opacity', elemento.dataset.indice);
             });

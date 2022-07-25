@@ -17,84 +17,97 @@
 <body>
     <main>
         <section class="mainimage">
-            <div class="maintag">Reportagem especial</div>
-            <h1>Brasil, país dos agrotóxicos</h1>
-            <img src="">
+            <div class="maintag"><span class="highlightPurple">Reportagem especial</span></div>
+            <h1><span class="highlightGray">Brasil, país dos agrotóxicos</span></h1>
+            <!-- Avião não usado, guardar pro caso de conseguir uma imagem boa de avião -->
+            <!--<img id="plane" src="./images/plane.svg" alt="avião de agrotóxicos">-->
         </section>
 
         <p class="intro">A utilização de agrotóxicos agrícolas causa milhares de intoxicações todos os anos no Brasil.
             <br>
-            A Agência Pública e a Repórter Brasil contabilizaram cada um desses casos.
+            A <b>Agência Pública</b> e a <b>Repórter Brasil</b> contabilizaram cada um desses casos.
         </p>
         
         <section class="passos">
             <div class="passo-0 passo-ativo">
-                <p>Na última década, quase 30 mil pessoas foram intoxicadas por agrotóxicos agrícolas no Brasil.</p>
+                <p class="dadoInfo">30.110<br><span class="dadoInfoTexto">intoxicações</span></p>
+                <img class="imagensScroll" id="imagem1" src="./images/info-1.svg" alt="dados agrotoxicos">
             </div>
         
             <div class="passo-1">
-                <p>É como se, a cada oito dias, uma pessoa tivesse uma intoxicação confirmada por agrotóxico no país.</p>
+                <p class="dadoInfo">1.505.500<br><span class="dadoInfoTexto">intoxicações estimadas</span></p>
+                <img class="imagensScroll" id="imagem1" src="./images/info-2.svg" alt="dados agrotoxicos">
             </div>
             
             <div class="passo-2">
-                <p>As intoxicações confirmadas são minoria, porque muitas pessoas não procuram atendimento.</p>
+                <p class="dadoInfo">14.645<br><span class="dadoInfoTexto">tentativas de suicídio</span></p>
+                <img class="imagensScroll" id="imagem1" src="./images/info-3.svg" alt="dados agrotoxicos">
             </div>
 
             <div class="passo-3">
-                <p>A estimativa é que o número real possa ser até 50 vezes o registrado.</p>
+                <p class="dadoInfo">13.216<br><span class="dadoInfoTexto">acidentais e ambientais</span></p>
+                <img class="imagensScroll" id="imagem1" src="./images/info-4.svg" alt="dados agrotoxicos">
             </div>
         
             <div class="passo-4">
-                <p>De todas as intoxicações registradas, 1.743 levaram à morte de pessoas.</p>
+                <p class="dadoInfo">1.766<br><span class="dadoInfoTexto">mortes</span></p>
+                <img class="imagensScroll" id="imagem1" src="./images/info-5.svg" alt="dados agrotoxicos">
             </div>
             
             <div class="passo-5">
-                <p>Ao todo, 138 desses casos foram mortes de pessoas que foram intoxicadas pela dispersão de agróticos, ou acidentes manuseando os produtos.</p>
+                
             </div>
         </section>
  
         <div class="gatilhos">
             <div data-alvo="passo-0"></div>
-            <div data-alvo="passo-1"></div>
-            <div data-alvo="passo-2"></div>
-            <div data-alvo="passo-3"></div>
-            <div data-alvo="passo-4"></div>
-            <div data-alvo="passo-5"></div>
+            <div data-alvo="passo-1"><p><span class="highlightGray">Na última década, mais de 30 mil pessoas foram intoxicadas por agrotóxicos agrícolas no Brasil.</span></p></div>
+            <div data-alvo="passo-2"><p><span class="highlightGray">Estima-se que o número real possa ser até 50 vezes maior, pela subnotificação.</span></p></div>
+            <div data-alvo="passo-3"><p><span class="highlightGray">De todas as intoxicações registradas, quase metade foi de tentativas de suicídio.</span></p></div>
+            <div data-alvo="passo-4"><p><span class="highlightGray">Em seguida, estão casos ligados ao uso no campo, como a deriva da aplicação e acidentes.</span></p></div>
+            <div data-alvo="passo-5"><p><span class="highlightGray">Mais de 5% de todas as intoxicações levaram a mortes.</span></p></div>
         </div>
 
 
         <section class="intro2">
-            <p>Todos esses dados são coletados pelo próprio Governo Federal, e podem ser acessados no DataSUS, do Ministério da Saúde.</p>
+            <p><span class="highlightGray">Todos esses dados são coletados pelo Governo Federal e podem ser acessados no <a href="url">DataSUS</a>, do Ministério da Saúde.</span></p>
         </section>
      
         <section class="map">
-            <h2>Mapa</h2>
+            <h2><span class="highlightGray">Mapa das intoxicações (2012 jan a 2022 mar)</span></h2>
             <div class="row">
                 <div class="column column-left">
                     <div id="UF-nome">Brasil</div>
                     <br>
                     <div id="UF-valorIntox">30.098 intoxicações</div>
                     <div id="UF-valorMortes">1.765 mortes</div>
+                    <br>
+                    <div id="buttonVoltar">voltar</div> 
                 </div>
                 <div class="column column-right">
                     <div id="map-content"></div>
                 </div>
             </div>
+            <p>Legenda: quanto mais forte o rosa, mais intoxicações foram registradas<div id="legenda"></div></p>
+            
         </section>
-
-          <!-- 
-
-            <div id="muni">
-                
-            </div>
         
-        <p>Você pode usar a Lei de Acesso à Informação e solicitar que a secretaria de saúde do seu município informe dados de intoxicação atualizados.</p>
-        <section class="scrollytellingcrops">
-            Culturas
+        <section class="scrollytellingRace">
+            <h2><span class="highlightGray">Intoxicações por raça</span></h2>
+            <label class="seletor">
+                <p>Quantas pessoas que identificam sua cor/raça como 
+                <select>
+                  <option value="brancas">brancas</option>
+                  <option value="negras" selected>negras</option>
+                  <option value="indígenas">indígenas</option>
+                  <option value="amarelas">amarelas</option>
+                  <option value="sem informação">sem informação</option>
+                </select>
+                 foram intoxicadas por agrotóxico no governo Bolsonaro?</p>
+            </label>
+              <ul>  
+              </ul>
         </section>
-
--->
-
     </main>
     
     <script src="app.js"></script>

@@ -1,3 +1,4 @@
+/*Configurações gerais da página*/
 html, body{
     height: 100%;
     width: 100%;
@@ -7,42 +8,75 @@ html, body{
     font-size: 18px;
     color: #FFFFFF;
     text-align: center;
-
 }
-
 main{
     height: 100%;
 }
-
 *{
     box-sizing: border-box;
 }
 
-.mainimage{
-    height: 80vh;
-    border:2px solid rgb(0, 64, 255);
-}
-
-.maintag{
-    padding-top: 30vh;
-    font-family: 'Raleway', sans-serif;
-    border:2px solid  rgb(0, 64, 255);
-}
-
+/*Títulos*/
 h1{
     font-size: 3em;
+    margin-top: 10vh;
 }
-
 h2{
     height: 1vh;
-    border:2px solid  rgb(0, 64, 255);
 }
 
+/*Texto*/
 p{
     font-family: 'Raleway', sans-serif;
     line-height: 1.6;
 }
 
+/*Destaques de texto*/
+.highlightPurple{
+    background-color: #663399;
+    padding: 1vh 2vh;
+}
+.highlightGray{
+    background-color: #383838;
+    padding: 1vh 2vh;   
+}
+
+/*Link*/
+a:link {
+    color:#fa7af6;
+}
+
+/*Seção de abertura com imagem principal*/
+.mainimage{
+    height: 90vh;
+    background-image: url('https://apublica.org/wp-content/uploads/2020/07/como-o-agronegocio-atua-para-garantir-a-pulverizacao-de-agrotoxicos-pelo-ar-destaque-scaled.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: lighten;
+    background-color: #663399;
+    background-position: center top;
+}
+.maintag{
+    padding-top: 15vh;
+    font-family: 'Raleway', sans-serif;
+}
+
+/*Animação não usada, guardar pro caso de conseguir uma imagem de avião*/
+/*#plane{
+    height: 20vh;
+    animation-name: animation1;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out; 
+}
+@keyframes animation1 {
+    0%      {padding-left: 0vw; padding-right: 15vw; transform: rotate(5deg);}
+    50%     {padding-left: 15vw; padding-right: 0vw; transform: rotate(-5deg);}
+    100%    {padding-left: 0vw; padding-right: 15vw;transform: rotate(5deg);}    
+}
+*/
+
+/*Texto de introdução do especial*/
 .intro{
     margin-bottom: 20vh;
 }
@@ -59,8 +93,8 @@ p{
     justify-content: center;
     position: fixed;
     top: 0;
-    z-index:1;
-    border:1px solid rgb(0, 255, 34);
+    z-index:-1;
+/*  border:1px solid rgb(0, 255, 34);*/
 }
   
 .passos > div{
@@ -75,47 +109,68 @@ p{
 .passos > div.passo-ativo{
     display: flex;
 }
-  
+
+.passo-0{
+    animation: fadeIn 1s;
+}
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+    
 .passos > div > *{
     display: block;
 }
-
-/*
-.passos > div > img{
-    width: 20%;
-    max-width: 60px;
-    margin: 0 auto;
-}
-*/
   
 .passos p{
     width: 40%;
     margin-right: 0%;
+    padding-left: 6%;
 }
   
 .gatilhos{
     position: relative;
     height: 100vh;
     width: 100%;
-    top: 0;
+    top: -30vh;
 }
 
 .gatilhos > div{
-    border:2px solid red;
+/*  border:2px solid red;*/
     height: 100vh;
     width: 100%;
-    z-index:2;
+    z-index:1;
     padding: 0%;
+}
+
+.imagensScroll{
+    height: 80vh;
+    margin: auto;
+}
+
+.dadoInfo{
+    font-family: 'Bitter', serif;
+    font-weight: bold;
+    font-size: 5em;
+    margin: 0 0 0 10vh;
+    justify-content: right;
+}
+
+.dadoInfoTexto{
+    font-size: 0.3em;
+    padding-top: 0;
+    margin-top: 0;
 }
 
 /*Fim código scrollytelling*/
 
 /*---------------------------------------------------------------------------------------------------------------*/
 
+/*Texto intermediário do especial*/
 .intro2{
     position: relative;
     display: inline;
-    top: 580vh;
+    top: 460vh;
 }
 
 /*---------------------------------------------------------------------------------------------------------------*/
@@ -126,14 +181,13 @@ p{
     height: 100vh;
     width: 100%;
     position: relative;
-    top: 600vh;
+    top: 480vh;
     z-index: 5;
-    border:2px solid rgb(255, 255, 0);
 }
 
 .row{
     display: flex;
-    border:2px solid  rgb(0, 64, 255);
+    margin-top: 8vh;
 }
 
 .column {
@@ -149,14 +203,18 @@ p{
 .column-left{
     height: 33vh;
     width: 25%;
-    background-color: #383838;
+/*  background-color: #383838; */
     margin: auto;
-    margin-left: 2%;
-    padding-top: 11vh;
+    margin-left: 10%;
+    padding-top: 8vh;
+    border: #FFFFFF;
+    border-style: solid;
+    border-width: 0.1px;
 }
 
 #UF-nome{
     font-weight: bold;
+    font-size: 1.2em;
 }
 
 .column-right{
@@ -166,12 +224,11 @@ p{
 #map-content {
     margin: 0 auto;
     width: auto;
-    height: 85vh;
+    height: 70vh;
     display: flex;
     justify-content: center;
     align-content: center;
     position: relative;
-    border:2px solid rgb(149, 0, 255);
     z-index: inherit;
 }
 
@@ -180,7 +237,7 @@ svg{
     width: 100%;
     stroke: #FFFFFF;
     stroke-opacity: 100%;
-    stroke-width: 150;
+    stroke-width: 200%;
 }
 
 svg path{
@@ -190,7 +247,111 @@ svg path{
 
 svg path.ativo {
     stroke: #ffd400;
-    stroke-width: 1000;
+    stroke-width: 1000%;
     fill: #ffd400;
     fill-opacity: 0.5;
+}
+
+#buttonVoltar{
+    display: none;
+    background-color: #383838;
+    padding: 1vh 2vh;
+    border-radius: 5px;
+}
+
+#legenda{
+    background-image: linear-gradient(to right, rgba(250, 122, 246,0),#fa7af6);
+    height: 1vh;
+    width: 50vw;
+    margin: auto;
+    display: inline-block;
+}
+
+/*Fim código mapa*/
+
+/*---------------------------------------------------------------------------------------------------------------*/
+
+/*Início código seletor*/
+
+.scrollytellingRace{
+    top: 500vh;
+    position: relative;
+    height: 100vh;
+}
+
+.seletor{
+    position: relative;
+    top: 10vh;
+}
+
+.rotulo {
+    display: inline-block;
+    width: 220px;
+    align-items: baseline;
+}
+  
+.barra {
+    display: inline-block;
+    width: 0;
+    height: 25px;
+    background: #fa7af6;
+    transition: all 1s;
+    margin: 1vh;
+}
+
+.quantidade{
+    display: inline-block;
+    align-items: left;
+}
+  
+ul {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-flow: column nowrap;
+    top: 5vh;
+    list-style-type: none;
+    margin: 20vh 20vh;
+    text-align: right;
+    vertical-align: top;
+    
+}
+  
+li:first-child .barra {
+    background: #ffd400; 
+    position: relative;
+    
+}
+  
+li:first-child .barra::after {
+    content: '';
+    display: block;
+    position: absolute;
+    height: 36vh;
+    top: 0px;
+    right: 0;
+    width: 0px;
+    border-right: 1px dashed rgba(239, 239, 239, 0.473);
+    z-index: 1;
+}
+  
+select {
+    all: unset;
+    color: rgb(22, 22, 22);
+    -webkit-text-fill-color: rgb(22, 22, 22);
+    padding: 2px 18px;
+    margin: 0 1vh;
+    background-color: rgb(239, 239, 239);
+}
+
+  
+@media (max-width: 60vw) {
+    li > span:first-child {
+      display: block;
+    }
+    li:first-child .barra::after {
+      display: none;
+    }
+    
 }
